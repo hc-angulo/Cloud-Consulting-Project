@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-var-m-around_medium slds-p-left_xx-large slds-var-p-right_xx-large slds-m-left_xx-large slds-m-right_xx-large">
+    
+        <lightning-datatable
+        key-field="Id"
+        data={resources}
+        columns={columns}
+        draft-values={draftValues}
+        onrowselection={handleSelectedRows}
+        oncellchange={handleErrors}
+        errors={errors}
+        show-row-number-column="true"
+        suppress-bottom-bar="true"
+        min-column-width="50"
+        >
+        </lightning-datatable>
+   
+    </div>
+</template>

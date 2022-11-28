@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Manager_Required</fullName>
+    <active>true</active>
+    <description>The Project Manager is required.</description>
+    <errorConditionFormula>AND(ISPICKVAL(StageName,&quot;Closed Won&quot;), ISBLANK(Project_Manager__c ))</errorConditionFormula>
+    <errorMessage>The Project Manager is required.</errorMessage>
+</ValidationRule>

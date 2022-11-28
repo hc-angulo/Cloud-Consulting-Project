@@ -1,0 +1,27 @@
+<template>
+<lightning-card title='Selected Resources' icon-name='standard:groups'>
+    <template if:true={resourceSize}>
+        <div class="slds-var-m-around_medium">
+        <lightning-datatable                        
+            key-field="Id"
+            data={resources}
+            columns={columns}
+            onrowselection={handleSelectedRows}
+            >
+        </lightning-datatable>
+        </div>
+    <div class="slds-align_absolute-center slds-p-around_medium lgc-bg-inverse">
+        <lightning-button variant="inverse" label="Delete" icon-name="utility:delete" onclick={handleClickDelete} class="slds-p-right_x-small slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="inverse" label="Squad Lead" icon-name="utility:user" onclick={handleSquadLead} class="slds-p-left_x-small slds-m-left_x-small"></lightning-button> 
+    </div>
+    </template>
+    
+    <template if:false={resourceSize}>
+        
+        <span class="slds-text-heading_small slds-align_absolute-center">No resources selected</span>
+    
+    </template>
+
+</lightning-card>
+</template>
+

@@ -1,0 +1,24 @@
+<template>
+<lightning-card>
+    <template if:true={allResources}>
+    <template for:each={allResources} for:item="resources" for:index="index">
+        <div key={Role__c}>
+        <template iterator:resource={resources}>
+            <div key={resource.value.Id}>
+                <div if:true={resource.first}>
+                        <c-table-header index={index} hr={_hours} role={resource.value.Role__c} icons-role={iconsRole}></c-table-header>
+                    <div class="slds-var-m-around_medium">
+                    <c-resources-table start-date={ProjectStartDate} end-date={ProjectEndDate} resources={resources} onselected={handleSelected}></c-resources-table>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    </template>
+</template>
+<div class="slds-p-top_medium slds-p-bottom_medium">
+    <lightning-button variant="brand" label="Submit" onclick={handleClick} title="Primary action" class="slds-align_absolute-center slds-m-left_x-small"></lightning-button>
+</div>
+</lightning-card>
+</template>
+
