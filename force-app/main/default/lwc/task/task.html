@@ -1,0 +1,42 @@
+<template>
+    <div class="slds-grid slds-wrap slds-box slds-box_x-small" style="background:rgb(0 255 28 / 23%);font-size:14px;font-weight:500">
+        <div class="slds-col slds-medium-size_2-of-12 slds-align_absolute-center">
+            <span class="  slds-align_absolute-center">{task.Name}</span>
+        </div>
+        <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+            <span class="slds-box_xx-small slds-align_absolute-center">{task.State__c}</span>
+        </div>
+        <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+            <div class="slds-box_xx-small slds-align_absolute-center">{task.Estimated_Hours__c}</div>
+        </div>
+        <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+            <span class="slds-box_xx-small slds-align_absolute-center">{task.Register_Hours__c}</span>
+        </div>
+        <div if:true ={taskStarted} class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+            
+                <div class="slds-col slds-size_3-of-12 slds-p-bottom_medium">
+                <lightning-input type="number" label="" value={hours} onchange={handleInput}></lightning-input>
+            </div> 
+            <div class="slds-col slds-size_9-of-12">
+                <div class="slds-box_xx-small slds-align_absolute-center">
+            <lightning-button label="Add Hours" title="Add hours" onclick={handleLoadHours}></lightning-button>
+            </div>
+        </div>
+          
+        </div>
+        <div if:true ={taskStarted} class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+            <div class="slds-m-left_x-small slds-p-right_medium">
+                <span class="slds-box_xx-small slds-align_absolute-center">
+                    <lightning-button label="Complete Task" title="Mark as completed" onclick={handleMarkCompleted}></lightning-button>
+                </span>
+            </div>
+        </div>
+        <div if:false ={taskStarted} class="slds-col  slds-medium-size_4-of-12 slds-align_absolute-center">
+            <div class="slds-m-left_x-small">
+                <span class="slds-box_xx-small slds-align_absolute-center">
+                    <lightning-button label="Start Task" title="Non-primary action" onclick={handleMarkCompleted}></lightning-button>
+                </span>
+            </div>
+        </div>       
+    </div>
+</template>

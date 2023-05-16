@@ -1,0 +1,34 @@
+<template>
+    <template if:true={tasks}>
+        <lightning-card title={projectName} icon-name="action:new_task">
+            <div  class="slds-var-m-around_medium slds-p-left_xx-large slds-var-p-right_xx-large slds-m-left_xx-large slds-m-right_xx-large">
+            <lightning-card>
+                <div class="slds-grid slds-wrap slds-box slds-text-color_inverse" style="background:rgb(79 115 217 / 87%);font-size:15px;font-weight:500">
+                    
+                    <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <span class="slds-box_xx-small  slds-align_absolute-center">Task</span>
+                    </div>
+                    <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <span class="slds-box_xx-small slds-align_absolute-center">Status</span>
+                    </div>
+                    <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <div class="slds-box_xx-small slds-align_absolute-center">Estimated Hours</div>
+                    </div>
+                    <div class="slds-col  slds-medium-size_2-of-12 slds-align_absolute-center">
+                        <span class="slds-box_xx-small slds-align_absolute-center">Registered Hours</span>
+                    </div>
+                    <div class="slds-col  slds-medium-size_4-of-12 slds-align_absolute-center">
+                        <span class="slds-box_xx-small slds-align_absolute-center">Actions</span>
+                    </div>
+                </div>
+            </lightning-card>  
+                <template for:each={tasks} for:item="task" >
+                    <lightning-layout-item key={task.Id} padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="3">
+                        <c-task task={task} onhoursadded={updateTasks}></c-task>                         
+                    </lightning-layout-item>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>
+

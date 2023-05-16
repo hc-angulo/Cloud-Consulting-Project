@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Squad_Lead_Assignment</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(ISBLANK( Squad_Lead__c ),
+ Squad_Lead__r.Id !=  00NDo000000bCUD.00NDo000000b1GA.Id )</errorConditionFormula>
+    <errorMessage>Please, assign a project resource as a leader.</errorMessage>
+</ValidationRule>

@@ -25,24 +25,43 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>Project_Resource__c.Project_Resource</members>
+		<members>RequiredRole__c.Required_Role</members>
+		<name>CompactLayout</name>
+	</types>
+	<types>
 		<members>Opportunity.End_Date__c</members>
 		<members>Opportunity.Project_Manager__c</members>
 		<members>Opportunity.Project_Name__c</members>
 		<members>Opportunity.Start_Date__c</members>
 		<members>Project_Resource__c.End_Date__c</members>
+		<members>Project_Resource__c.Estimated_Amount__c</members>
 		<members>Project_Resource__c.Estimated_Hours__c</members>
+		<members>Project_Resource__c.Rate_p_hour__c</members>
 		<members>Project_Resource__c.Required_Role__c</members>
 		<members>Project_Resource__c.Resource__c</members>
-		<members>Project_Resource__c.Role__c</members>
 		<members>Project_Resource__c.Start_Date__c</members>
+		<members>Project_Task__c.Description__c</members>
+		<members>Project_Task__c.End_Date__c</members>
+		<members>Project_Task__c.Estimated_Hours__c</members>
+		<members>Project_Task__c.Project_Resource__c</members>
+		<members>Project_Task__c.Project__c</members>
+		<members>Project_Task__c.Register_Hours__c</members>
+		<members>Project_Task__c.Resource__c</members>
+		<members>Project_Task__c.Start_Date__c</members>
+		<members>Project_Task__c.State__c</members>
 		<members>Project__c.Amount__c</members>
 		<members>Project__c.Client__c</members>
 		<members>Project__c.End_Date__c</members>
+		<members>Project__c.Estimated_Amount__c</members>
 		<members>Project__c.Opportunity__c</members>
 		<members>Project__c.Project_Manager__c</members>
 		<members>Project__c.Squad_Lead__c</members>
 		<members>Project__c.Stage__c</members>
 		<members>Project__c.Start_Date__c</members>
+		<members>Project__c.Total_Tasks_Completed__c</members>
+		<members>Project__c.Total_Tasks__c</members>
+		<members>RequiredRole__c.Estimated_Amount__c</members>
 		<members>RequiredRole__c.Estimated_Hours__c</members>
 		<members>RequiredRole__c.Hours_To_Cover__c</members>
 		<members>RequiredRole__c.Number_of_hours_sold__c</members>
@@ -53,10 +72,15 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>CustomLabels</name>
+	</types>
+	<types>
 		<members>Opportunity</members>
 		<members>OpportunityLineItem</members>
 		<members>Product2</members>
 		<members>Project_Resource__c</members>
+		<members>Project_Task__c</members>
 		<members>Project__c</members>
 		<members>RequiredRole__c</members>
 		<name>CustomObject</name>
@@ -67,11 +91,63 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>FlowDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>HomePageLayout</name>
+	</types>
+	<types>
+		<members>Project_Resource__c-Project Resource Per Role Layout</members>
+		<members>Project_Task__c-Project Task Layout</members>
+		<members>Project__c-Project Layout</members>
+		<members>RequiredRole__c-Role Per Project Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Project_Resource__c.All</members>
+		<members>Project_Task__c.All</members>
+		<members>Project__c.All</members>
+		<members>RequiredRole__c.All</members>
+		<name>ListView</name>
+	</types>
+	<types>
+		<members>Project__c</members>
+		<name>SharingRules</name>
 	</types>
 	<types>
 		<members>*</members>
 		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>TopicsForObjects</name>
+	</types>
+	<types>
+		<members>Opportunity.Project_Manager_Required</members>
+		<members>Project_Resource__c.Date_Out_Of_Project_Range</members>
+		<members>Project_Resource__c.Start_Date_greater_than_End_Date</members>
+		<members>Project_Task__c.Date_Out_Of_Project_Range</members>
+		<members>Project_Task__c.Not_creation_allowed</members>
+		<members>Project_Task__c.Project_Resource_Not_Allowed</members>
+		<members>Project__c.Squad_Lead_Assignment</members>
+		<name>ValidationRule</name>
 	</types>
 	<version>55.0</version>
 </Package>

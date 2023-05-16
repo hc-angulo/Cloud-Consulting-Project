@@ -1,0 +1,10 @@
+<template>
+    <template if:true={allTasks}>
+        <template for:each={allTasks} for:item="tasks">
+            <div class="slds-m-bottom_x-small" key={State__c}>
+                <c-add-tasks tasks={tasks} onhoursadded={updateTasks}></c-add-tasks>
+            </div>
+      </template>
+    </template>
+    <template if:false={allTasks}>Holaaaaaaa</template>
+</template>

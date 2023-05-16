@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title='Selected Resources' icon-name='standard:groups'>
+        <template if:true={resources}>
+            <div class="slds-var-m-around_medium">
+            <lightning-datatable                        
+                key-field="Id"
+                data={resources}
+                columns={columns}
+                >
+            </lightning-datatable>
+            </div>
+       
+        </template>
+    </lightning-card>
+    </template>
