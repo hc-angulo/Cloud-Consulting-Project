@@ -83,4 +83,7 @@ Para desarrollar esta funcionalidad, se tuvieron las siguientes consideraciones:
 ### Demo
 <a name="item6"></a>
 ### Módelo de Datos
-https://lucid.app/lucidchart/9221fa40-29b4-4bff-8b6a-fd968888de7d/edit?viewport_loc=537%2C61%2C1110%2C519%2C0_0&invitationId=inv_8d88f23c-5f7d-4425-ada4-2575b0bb5711)
+![Sin título](https://github.com/Hilicarolina/Cloud-Consulting-Project/assets/14808063/2faf27d9-554c-4c82-9006-171bd67d8b88)
+
+
+
