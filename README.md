@@ -1,9 +1,9 @@
 # Cloud Consulting
 
-Cloud Consulting es una empresa que se dedica a la implementación de proyectos de software.  Está en la búsqueda de un sistema que le permita gestionar dichos proyectos y salirse de los procesos manuales que hoy en día tienen a través de excels, documentos y repositorios que no se encuentran integrados ni automatizados.
+**Cloud Consulting** es una empresa que se dedica a la implementación de proyectos de _software_.  Está en la búsqueda de un sistema que le permita gestionar dichos proyectos y salirse de los procesos manuales que hoy en día tienen a través de excels, documentos y repositorios que no se encuentran integrados ni automatizados.
 
 ## Funcionalidades requeridas
-Las funcionalidades requeridas para solucionar las necesidades de _Cloud Consulting_ están relacionadas con las siguientes:
+Las funcionalidades requeridas para solucionar las necesidades de **Cloud Consulting** están relacionadas con las siguientes:
 
 - [1. El cierre de oportunidad](#item1)
 - [2. Alocación de recursos](#item2)
@@ -19,7 +19,9 @@ A continuación, describiremos en que consiste cada funcionalidad y mostraremos 
 
 <a name="item1"></a>
 ### Cierre de oportunidad
-Cuando la oportunidad se cierra y la misma sea “Ganada”, se tiene que crear el proyecto con la información inicial que proviene desde la oportunidad:
+**Cloud Consulting** como empresa que se dedica al servicio de implementación de proyectos de software, vende horas de servicio de Roles en _IT_ (Consultores, Arquitectos y Desarrolladores de Software). Esta negociación se almacena en el objeto estándar de Salesforce, _Oportunidad_.
+
+Cuando la negociación se cierra y la misma sea “Ganada”, se tiene que crear el proyecto con la información inicial que proviene desde la _oportunidad_:
 
 - Cliente (Account).
 - Cantidad de horas vendidas.
