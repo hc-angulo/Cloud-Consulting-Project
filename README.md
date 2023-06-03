@@ -11,6 +11,7 @@ Las funcionalidades requeridas para solucionar las necesidades de **Cloud Consul
 - [4. Cargas de horas](#item4)
 - [5. Demo](#item5)
 - [6. Módelo de Datos](#item6)
+- [7. Herramientas](#item7)
 
 
 El objetivo es desarrollar una aplicación que involucre programación declarativa, desarrollo Backend y Frontend.
@@ -87,5 +88,12 @@ Para desarrollar esta funcionalidad, se tuvieron las siguientes consideraciones:
 ### Módelo de Datos
 ![Sin título](https://github.com/Hilicarolina/Cloud-Consulting-Project/assets/14808063/2faf27d9-554c-4c82-9006-171bd67d8b88)
 
+### Herramientas
+
+<p align="left> 
+  <a href="" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="salesforce" width="100" height="100"/>
+  </a>
+</p>
 
 
